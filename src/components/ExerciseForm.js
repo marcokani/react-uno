@@ -16,16 +16,13 @@ class ExerciseForm extends Component {
     // }
 
 
-    onSubmitw=e=>{
-        e.preventDefault()
-        //console.log(form)
-    }
+
     render() {
-        const {onChange,form}=this.props
+        const {onChange,form, onSubmit}=this.props
         return (
             <div className="container">
                 <form
-                onSubmit={this.onSubmitw}
+                onSubmit={onSubmit}
                 >
                     <div className="form-group">
                         <input
